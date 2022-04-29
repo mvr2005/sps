@@ -1,0 +1,302 @@
+*{
+	padding: 0;
+	margin: 0;     /*убирают отступы*/
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;       /*меняет подсчет ширины блока*/
+	box-sizing: border-box;
+}
+:focus,:aktive{outline:  none;}
+a:focuse,a:aktive{outline: none;}       /*убирает подводки в некоторых браузерах*/
+
+nav,footer,header,aside{display: block;}    /*некоторые html теги делаем блочными*/
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;                 /*уравнивают поведение шривтов,элементов для разных браузеров*/
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family: inherit;}  /*просим теги форм наследовать шрифт*/
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}           /*убираем на тегах некоторые особенности*/
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}   /*обнуляем заголовки*/
+
+
+
+.header{
+	width: 100%;
+	height: 100px;
+	background-color: #2B2828;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: sticky;
+	top: 0px;
+}
+.logo{
+	width: 30%;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 80px;
+	font-family: 'Inter', sans-serif;
+}
+
+.textOrange{
+	color: #FB6714;
+	font-weight: 100;
+}
+
+.textWhite{
+	color:#EBE7E5;
+	font-weight: 400;
+}
+
+.nav{
+	width: 70%;
+	text-align: center;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 0 10% 0 30%;
+	font-family: 'Nunito Sans', sans-serif;
+	text-decoration: none;
+}
+
+.navText1{
+  color: white;
+  font-size: 16px;
+  margin: 10px;
+}
+
+.navText1:hover{
+	color: red;
+}
+.navText1:active{
+	color: #FB6714;
+}
+
+.fon{
+	background: url('../img/fon1.jpg') 0 0/100% auto no-repeat;
+	display: flex;
+	justify-content: center;
+}
+
+.box1{
+	width: 40%;
+	text-transform: uppercase;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	padding: 10% 0;
+}
+
+
+.logo2{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 10vw;
+	font-family: 'Inter', sans-serif;
+	font-weight: 100;
+}
+
+h1{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2vw;
+	font-family: 'Inter', sans-serif;
+	color: #EBE7E5;
+	font-weight: 100;
+}
+
+
+.box1>.box{
+	font-family:  'Inter', sans-serif;
+	color: #EBE7E5;
+	font-size: 1.3vw;
+	font-weight: 100;
+	word-spacing: 7vh;
+	text-transform: uppercase;
+}
+
+.line{
+	height: 10vh;
+	width: 100%;
+	padding: 0.5% 35% 0 25%;
+
+	
+}
+
+.line1{
+	height: 1px;
+	border: 0.1px solid white;
+}
+
+.box2{
+	width: 40%;
+	padding: 5%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 500;
+	color: white;
+}
+
+
+.fon>.box2>.button1{
+	border: 3px solid #FF6A00FF;
+	height: 40px;
+	width: 250px;
+	border-radius: 15px;
+	background: rgba(232, 141, 5, 0.52);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.fon>.box2>.button1:hover{
+	background: #FF6A00FF;
+}
+
+.button{
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 500;
+	color: white;
+	text-align: center;
+}
+.button:active{
+	color: black;
+}
+
+.fon>.box1.line{
+	height: 20px;
+	width: 50px;
+
+	border: 3px solid white;
+}
+
+.fon>.box2>.button2{
+	border: 3px solid #FF6A00FF;
+	height: 40px;
+	width: 250px;
+	border-radius: 15px;
+	background: rgba(232, 141, 5, 0.52);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.fon>.box2>.button2:hover{
+	background: #FF6A00FF;
+}
+
+.socials{
+	background-color:#B8B6B2;
+}
+
+
+.socials>.text{
+	display: flex;
+	justify-content: space-around;
+}
+
+.imgOk{
+	width: 4vw;
+}
+.imgOk:hover{
+	border: 5px solid #FFAB66;
+	border-radius: 10%;
+}
+
+.imgVk{
+	width: 4vw;	
+}
+.imgVk:hover{
+	border: 5px solid #4C75A3;
+	border-radius: 10%;
+}
+
+.imgTelegram{
+	width: 4vw;
+}
+.imgTelegram:hover{
+	border: 5px solid #1B92D1;
+	border-radius: 10%;
+}
+
+.socials>.text>.text{
+	width: 40%;
+	
+	text-transform: uppercase;
+	font-size: 1.3vw;
+	font-family: 'Inter', sans-serif;
+	font-weight: 500;
+	color: black;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.socials>.text>.icon{
+	width: 60%;
+	
+	display: flex;
+	justify-content: space-evenly;
+}
+.title{
+	background: #808080FF;
+}
+h2{
+	color: #404040;
+	font-size: 5vw;
+	text-align: center;
+}
+
+.blocInfo{
+	padding: 0 15vw;
+	display: flex;
+	flex-direction: column;
+}
+.boxWindows{
+	display: flex;
+}
+.textWindows{
+	font-size: 36px;
+}
+.boxAlWindows{
+	display: flex;
+}
+.textAlWindows{
+	font-size: 36px;
+}
+.textDoors{
+	font-size: 36px;
+}
+.boxDoors{
+	display: flex;
+}
+.boxPartitions{
+	display: flex;
+}
+.textPartitions{
+	font-size: 36px;
+}
